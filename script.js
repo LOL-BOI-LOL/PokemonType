@@ -65,6 +65,7 @@ for (let i = 0; i < 18; ++i) {
         } else {
             p[i].style.color = "rgb(194,191,20)";
         }
+        document.writeln(":)");
     };
 }
 
