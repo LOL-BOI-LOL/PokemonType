@@ -57,3 +57,12 @@ function computeEffects(type1, type2) {
   for (let i = 0; i < 18; ++i)
     p[i].innerText = effects[i];
 }
+
+for (let i = 0; i < 18; ++i) {
+    p[i].onclick = () => {
+        if (p[i].color == "rgb(194, 191, 20)")
+            p[i].color = "rgb(0, 0, 0)";
+        else
+            p[i].color = "rgb(194, 191, 20)";
+    };
+}
