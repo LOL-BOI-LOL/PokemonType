@@ -17,3 +17,12 @@ p {
   color: white;
   text-shadow: 2px 2px 4px black;
 }
+
+.type {
+  color: white;
+  text-shadow: 2px 2px 4px black;
+}
+
+.effect {
+  color: rgb(255, 221, 87);
+}
