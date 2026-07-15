@@ -61,10 +61,10 @@ function computeEffects(type1, type2) {
 
 for (let i = 0; i < 18; ++i) {
     typs[i].onclick = () => {
-        if (typs[i].style.color == "rgb(194,191,20)") {
-            typs[i].style.color = "rgb(255,255,255)";
+        if (typs[i].style.color == "#C2BF14") {
+            typs[i].style.color = "white";
         } else {
-            typs[i].style.color = "rgb(194,191,20)";
+            typs[i].style.color = "#C2BF14";
         }
     };
 }
