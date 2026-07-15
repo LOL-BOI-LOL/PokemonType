@@ -16,6 +16,7 @@ p {
   font: italic bold 1.2em monospace;
   color: white;
   text-shadow: 2px 2px 4px black;
+  user-select: none;
 }
 
 .type {
