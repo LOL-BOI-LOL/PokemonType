@@ -1,4 +1,5 @@
 const p = document.getElementsByClassName("effect");
+const typs = document.getElementsByClassName("type");
 
 const ref = [[1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1],
             [1, 0.5, 2, 1, 0.5, 0.5, 1, 1, 2, 1, 1, 0.5, 2, 1, 1, 1, 0.5, 0.5],
@@ -59,15 +60,11 @@ function computeEffects(type1, type2) {
 }
 
 for (let i = 0; i < 18; ++i) {
-    p[i].onclick = () => {
-        if (p[i].style.color == "rgb(194,191,20)") {
-            p[i].style.color = "rgb(255,255,255)";
+    typs[i].onclick = () => {
+        if (typs[i].style.color == "rgb(194,191,20)") {
+            typs[i].style.color = "rgb(255,255,255)";
         } else {
-            p[i].style.color = "rgb(194,191,20)";
+            typs[i].style.color = "rgb(194,191,20)";
         }
-        document.writeln(":)");
     };
 }
-
-p[17].style.color = "black";
-document.writeln(p[17].style.color);
