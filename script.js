@@ -70,3 +70,4 @@ for (let i = 0; i < 18; ++i) {
 }
 
 p[17].style.color = "black";
+document.writeln(":)");
