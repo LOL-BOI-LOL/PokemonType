@@ -43,7 +43,7 @@ const dict = {
 function computeEffects(type1, type2) {
   type1 = type1.toLowerCase();
   type2 = type2.toLowerCase();
-  let effecs = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
+  let effects = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
   
   if (type1 != "none") {
     for (let i = 0; i < 18; ++i)
