@@ -42,8 +42,6 @@ const dict = {
 };
 
 function computeEffects() {
-  type1 = type1.toLowerCase();
-  type2 = type2.toLowerCase();
   let effects = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
 
   for (let j = 0; j < 18; ++j) {
