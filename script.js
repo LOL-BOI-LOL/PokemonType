@@ -47,11 +47,11 @@ function computeEffects(type1, type2) {
   
   if (type1 != "none") {
     for (let i = 0; i < 18; ++i)
-      effects[i] *= ref[i][dict[type1]];
+      effects[i] *= ref[dict[type1]][i];
   }
   if (type2 != "none") {
     for (let i = 0; i < 18; ++i)
-      effects[i] *= ref[i][dict[type2]];
+      effects[i] *= ref[dict[type2]][i];
   }
 
   for (let i = 0; i < 18; ++i)
