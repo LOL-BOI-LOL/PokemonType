@@ -11,8 +11,8 @@ th, td {
   height: 50px;
 }
 
-.type {
-  font-size: 36px;
+p {
+  font: italic bold 1.2em monospace;
   font-color: white;
   text-shadow: 2px 2px 4px black;
 }
