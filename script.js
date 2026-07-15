@@ -41,18 +41,16 @@ const dict = {
     "fai": 17
 };
 
-function computeEffects(type1, type2) {
+function computeEffects() {
   type1 = type1.toLowerCase();
   type2 = type2.toLowerCase();
   let effects = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1];
-  
-  if (type1 != "none") {
-    for (let i = 0; i < 18; ++i)
-      effects[i] *= ref[dict[type1]][i];
-  }
-  if (type2 != "none") {
-    for (let i = 0; i < 18; ++i)
-      effects[i] *= ref[dict[type2]][i];
+
+  for (let j = 0; j < 18; ++j) {
+    if (typs[j].style.color == "rgb(194, 191, 20)") {
+       for (let i = 0; i < 18; ++i)
+          effects[i] *= ref[j][i];
+    }
   }
 
   for (let i = 0; i < 18; ++i)
@@ -66,5 +64,6 @@ for (let i = 0; i < 18; ++i) {
         } else {
             typs[i].style.color = "rgb(194, 191, 20)";
         }
+        computeEffects();
     };
 }
