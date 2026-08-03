@@ -71,7 +71,6 @@ for (let i = 0; i < 18; ++i) {
             } else {
                 p[j].style.color = "black";
             }
-            document.writeln(parseFloat(p[j].innerText));
         }
     };
 }
