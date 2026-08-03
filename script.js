@@ -64,12 +64,12 @@ for (let i = 0; i < 18; ++i) {
         }
         computeEffects();
         for (let j = 0; j < 18; ++j) {
-            if (parseFloat(effects[j].innerText) > 1)
-                effects[j].style.color = "rgb(93, 250, 93)";
-            else if (parseFloat(effects[j].innerText) < 1)
-                effects[j].style.color = "rgb(217, 49, 60)";
+            if (parseFloat(p[j].innerText) > 1)
+                p[j].style.color = "rgb(93, 250, 93)";
+            else if (parseFloat(p[j].innerText) < 1)
+                p[j].style.color = "rgb(217, 49, 60)";
             else
-                effects[j].style.color = "white";
+                p[j].style.color = "white";
         }
     };
 }
