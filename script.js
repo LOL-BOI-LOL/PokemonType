@@ -64,12 +64,14 @@ for (let i = 0; i < 18; ++i) {
         }
         computeEffects();
         for (let j = 0; j < 18; ++j) {
-            if (parseFloat(p[j].innerText) > 1)
+            if (parseFloat(p[j].innerText) > 1) {
                 p[j].style.color = "rgb(93, 250, 93)";
-            else if (parseFloat(p[j].innerText) < 1)
+            } else if (parseFloat(p[j].innerText) < 1) {
                 p[j].style.color = "rgb(217, 49, 60)";
-            else
-                p[j].style.color = "white";
+            } else {
+                p[j].style.color = "black";
+            }
+            document.writeln(parseFloat(p[j].innerText));
         }
     };
 }
