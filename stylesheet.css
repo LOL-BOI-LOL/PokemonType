@@ -19,11 +19,6 @@ p {
   user-select: none;
 }
 
-.type {
-  color: white;
-  text-shadow: 2px 2px 4px black;
-}
-
 .effect {
-  color: rgb(0, 0, 0);
+  color: black;
 }
